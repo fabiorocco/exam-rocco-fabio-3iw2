@@ -40,6 +40,9 @@ class StringFormatterTest extends \PHPUnit_Framework_TestCase
         $result = $stringFormatter->toCamelCase('Prefix', 'string');
 
         $this->assertNotEquals('PrefixString', $result);
+        $this->assertNotEquals('Prefix String', $result);
+        $this->assertNotEquals('Prefixstring', $result);
+        $this->assertNotEquals('prefixstring', $result);
     }
 
     public function testConcatStringSuccess()
