@@ -8,7 +8,7 @@ class StringFormatterTest extends \PHPUnit_Framework_TestCase
 /*
     public function testPrefixSuccess()
     {
-        
+
     }
 
     public function testPrefixError()
@@ -41,15 +41,23 @@ class StringFormatterTest extends \PHPUnit_Framework_TestCase
 
         $this->assertNotEquals('PrefixString', $result);
     }
-/*
+
     public function testConcatStringSuccess()
     {
+        $stringFormatter = new StringFormatter();
+        $result = $stringFormatter->concatString('first', 'second');
 
+        $this->assertEquals('firstsecond', $result);
     }
 
     public function testConcatStringError()
     {
+        $stringFormatter = new StringFormatter();
+        $result = $stringFormatter->concatString('first', 'second');
 
+        $this->assertNotEquals('first second', $result);
+        $this->assertNotEquals('second first', $result);
+        $this->assertNotEquals('secondfirst', $result);
     }
-*/
+
 }
