@@ -5,17 +5,25 @@ use Lib\StringFormatter;
 
 class StringFormatterTest extends \PHPUnit_Framework_TestCase
 {
-/*
+
     public function testPrefixSuccess()
     {
-
+        $stringFormatter = new StringFormatter();
+        $resultYesCamelCase = $stringFormatter->prefix('prefix', 'string', true);
+        $this->assertEquals('prefixString', $resultYesCamelCase);
+        $resultNoCamelCase = $stringFormatter->prefix('prefix', 'string', false);
+        $this->assertEquals('prefixstring', $resultNoCamelCase);
     }
 
     public function testPrefixError()
     {
-
+        $stringFormatter = new StringFormatter();
+        $resultYesCamelCase = $stringFormatter->prefix('prefix', 'string', true);
+        $this->assertNotEquals('prefixstring', $resultYesCamelCase);
+        $resultNoCamelCase = $stringFormatter->prefix('prefix', 'string', false);
+        $this->assertNotEquals('prefixString', $resultNoCamelCase);
     }
-
+/*
     public function testSuffixSuccess()
     {
 
