@@ -2,5 +2,10 @@
     "name": "serge/exam-rocco-fabio-3iw2",
     "require": {
         "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4" : {
+            "" : "src/"
+        }
     }
 }
