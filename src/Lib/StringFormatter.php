@@ -27,8 +27,7 @@ class StringFormatter
      */
     public function suffix($suffix, $string, $camelCase = false)
     {
-        if($camelCase)
-        {
+        if ($camelCase) {
             return $this->toCamelCase($string, $suffix);
         }
         return $this->concatString($string, $suffix);
