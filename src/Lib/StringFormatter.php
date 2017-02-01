@@ -12,8 +12,7 @@ class StringFormatter
      */
     public function prefix($prefix, $string, $camelCase = false)
     {
-        if($camelCase)
-        {
+        if ($camelCase) {
             return $this->toCamelCase($prefix, $string);
         }
         return $this->concatString($prefix, $string);
@@ -50,6 +49,6 @@ class StringFormatter
      */
     public function concatString($firstString, $secondString)
     {
-        return $firstString . $secondString;
+        return $firstString.$secondString;
     }
 }
