@@ -23,17 +23,25 @@ class StringFormatterTest extends \PHPUnit_Framework_TestCase
         $resultNoCamelCase = $stringFormatter->prefix('prefix', 'string', false);
         $this->assertNotEquals('prefixString', $resultNoCamelCase);
     }
-/*
+
     public function testSuffixSuccess()
     {
-
+        $stringFormatter = new StringFormatter();
+        $resultYesCamelCase = $stringFormatter->suffix('suffix', 'string', true);
+        $this->assertEquals('stringSuffix', $resultYesCamelCase);
+        $resultNoCamelCase = $stringFormatter->suffix('suffix', 'string', false);
+        $this->assertEquals('stringsuffix', $resultNoCamelCase);
     }
 
     public function testSuffixError()
     {
-
+        $stringFormatter = new StringFormatter();
+        $resultYesCamelCase = $stringFormatter->suffix('suffix', 'string', true);
+        $this->assertNotEquals('suffixstring', $resultYesCamelCase);
+        $resultNoCamelCase = $stringFormatter->suffix('suffix', 'string', false);
+        $this->assertNotEquals('suffixString', $resultNoCamelCase);
     }
-*/
+
     public function testToCamelCaseSuccess()
     {
         $stringFormatter = new StringFormatter();
